@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif !important;
+}
+
+.author__avatar img {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  border: none !important;
+  box-shadow: none !important;
+}
