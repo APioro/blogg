@@ -9,11 +9,15 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 /* 1. Theme settings: define these BEFORE the imports */
+/*TYPOGRAPHY*/
 $global-font-family: "Switzer", sans-serif;
 $header-font-family: "Switzer", sans-serif;
 
-/* Example colour overrides — change these to your chosen palette */
+/*COLORS */
 $link-color: #28745b;
+$blacktext: #000000;
+$text-color: $blacktext;
+$link-color: $blacktext;
 
 /* 2. Load the theme's original skin and styles */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
@@ -30,14 +34,9 @@ $link-color: #28745b;
 
 /* 4. Your own CSS goes AFTER the theme imports */
 .author__avatar img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 500px;
   object-fit: cover;
-  border-radius: 50%;
   border: none;
   box-shadow: none;
-}
-
-body {
-  background: magenta !important;
 }
