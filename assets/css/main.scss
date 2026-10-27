@@ -1,11 +1,20 @@
 
 ---
+search: false
 ---
 
+/* 1. Theme settings: define these BEFORE the imports */
+$global-font-family: "Switzer", sans-serif;
+$header-font-family: "Switzer", sans-serif;
+
+/* Example colour overrides — change these to your chosen palette */
+$link-color: #28745b;
+
+/* 2. Load the theme's original skin and styles */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* Load your local fonts */
-
+/* 3. Load your local font */
 @font-face {
   font-family: "Switzer";
   src: url("../fonts/Switzer-Variable.woff2") format("woff2");
@@ -14,16 +23,7 @@
   font-display: swap;
 }
 
-
-
-/* Apply them to the site */
-
-body {
-  font-family: "Switzer", sans-serif;
-}
-
-
-/* Profile picture */
+/* 4. Your own CSS goes AFTER the theme imports */
 .author__avatar img {
   width: 100px;
   height: 100px;
