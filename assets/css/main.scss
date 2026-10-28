@@ -15,11 +15,12 @@ $global-font-family: "Switzer", sans-serif;
 $header-font-family: "Switzer", sans-serif;
 
 /*COLORS */
-$link-color: #28745b;
+$link-color: #a3cbe2;
+$whitetext: #EAE8E6;
 $blacktext: #000000;
-$darkgreytext: #161617;
-$text-color: $blacktext;
-$link-color: $blacktext;
+$darkgreytext: #121212;
+$text-color: $whitetext;
+
 
 /* General type scale */
 $type-size-1: 2.441em;
@@ -101,7 +102,7 @@ $h-size-6: 1em;      // h6
 .greedy-nav a,
 .masthead__menu a {
   color: $darkgreytext;
-  font-size: 14px;
+  font-size: $type-size-7;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
@@ -161,14 +162,14 @@ body,
 /* Navigation background */
 .masthead,
 .greedy-nav {
-  background-color: #fafaff !important;
+  background-color: $darkgreytext !important;
 }
 
 /* Navigation text and buttons */
 .greedy-nav a,
 .masthead__menu a,
 .greedy-nav button {
-  color: #171718 !important;
+  color: #d9d9de !important;
 }
 
 /* Gentle navigation link fade */
@@ -189,4 +190,10 @@ body,
 
 .p-summary{
   opacity: 0.75;
+}
+
+.page__content p,
+.page__content li,
+.page__content dl {
+  font-size: $type-size-5;
 }
