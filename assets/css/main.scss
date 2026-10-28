@@ -36,20 +36,46 @@ $link-color: $blacktext;
 .author__avatar img {
   display: block;
   width: 100%;
-  max-width: 220px;
+  max-width: 258px;
   height: auto;
   object-fit: cover;
   border: none;
   box-shadow: none;
+  border-radius: 0%;
 }
 
-.u-profile,
-.u-profile:hover {
+.author__avatar a,
+.author__avatar a:hover {
+  opacity: 1 !important;
   box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.author__avatar img:hover {
   border: none !important;
-  background: transparent !important;
+  box-shadow: none !important;
   opacity: 1 !important;
   filter: none !important;
   transform: none !important;
   transition: none !important;
 }
+
+/* General type scale */
+$type-size-1: 2.441em;
+$type-size-2: 1.953em;
+$type-size-3: 1.563em;
+$type-size-4: 1.25em;
+$type-size-5: 1em;
+$type-size-6: 0.75em;
+$type-size-7: 0.6875em;
+$type-size-8: 0.625em;
+
+/* Heading scale */
+$h-size-1: 1.563em;  // h1
+$h-size-2: 1.25em;   // h2
+$h-size-3: 1.125em;  // h3
+$h-size-4: 1.0625em; // h4
+$h-size-5: 1.03125em;// h5
+$h-size-6: 1em;      // h6
