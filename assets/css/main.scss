@@ -10,6 +10,7 @@ search: false
 
 /* 1. Theme settings: define these BEFORE the imports */
 /*TYPOGRAPHY*/
+$sans-serif: "Switzer", sans-serif;
 $global-font-family: "Switzer", sans-serif;
 $header-font-family: "Switzer", sans-serif;
 
@@ -18,6 +19,25 @@ $link-color: #28745b;
 $blacktext: #000000;
 $text-color: $blacktext;
 $link-color: $blacktext;
+
+/* General type scale */
+$type-size-1: 2.441em;
+$type-size-2: 1.953em;
+$type-size-3: 1.563em;
+$type-size-4: 1.25em;
+$type-size-5: 1em;
+$type-size-6: 0.75em;
+$type-size-7: 0.6875em;
+$type-size-8: 0.625em;
+
+/* Heading scale */
+$h-size-1: 1.563em;  // h1
+$h-size-2: 1.25em;   // h2
+$h-size-3: 1.125em;  // h3
+$h-size-4: 1.0625em; // h4
+$h-size-5: 1.03125em;// h5
+$h-size-6: 1em;      // h6
+
 
 /* 2. Load the theme's original skin and styles */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
@@ -62,20 +82,7 @@ $link-color: $blacktext;
   transition: none !important;
 }
 
-/* General type scale */
-$type-size-1: 2.441em;
-$type-size-2: 1.953em;
-$type-size-3: 1.563em;
-$type-size-4: 1.25em;
-$type-size-5: 1em;
-$type-size-6: 0.75em;
-$type-size-7: 0.6875em;
-$type-size-8: 0.625em;
-
-/* Heading scale */
-$h-size-1: 1.563em;  // h1
-$h-size-2: 1.25em;   // h2
-$h-size-3: 1.125em;  // h3
-$h-size-4: 1.0625em; // h4
-$h-size-5: 1.03125em;// h5
-$h-size-6: 1em;      // h6
+.sidebar sticky :hover{
+  opacity: 1 !important;
+  transition: none !important;
+}
