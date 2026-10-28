@@ -84,7 +84,7 @@ $h-size-6: 1em;      // h6
   transition: none !important;
 }
 
-.sidebar :hover{
+.sidebar {
   opacity: 1 !important;
   transition: none !important;
 }
@@ -154,14 +154,14 @@ body,
 /* Navigation background */
 .masthead,
 .greedy-nav {
-  background-color: #bdd7eb !important;
+  background-color: #100e0d !important;
 }
 
 /* Navigation text and buttons */
 .greedy-nav a,
 .masthead__menu a,
 .greedy-nav button {
-  color: #2b2c3b !important;
+  color: #bdc0e3 !important;
 }
 
 /* Gentle navigation link fade */
@@ -173,4 +173,9 @@ body,
 .greedy-nav a:hover,
 .masthead__menu a:hover {
   opacity: 0.65;
+}
+
+.sidebar.sticky {
+  overflow-y: visible !important;
+  max-height: none !important;
 }
