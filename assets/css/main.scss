@@ -54,6 +54,15 @@ $h-size-6: 1em;      // h6
   font-display: swap;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 /* 4. Your own CSS goes AFTER the theme imports */
 .author__avatar img {
   display: block;
@@ -181,6 +190,8 @@ body,
 .greedy-nav a:hover,
 .masthead__menu a:hover {
   opacity: 0.65;
+  font-weight: 400;
+  font-family: $global-font-family;
 }
 
 .sidebar.sticky {
@@ -196,4 +207,5 @@ body,
 .page__content li,
 .page__content dl {
   font-size: $type-size-5;
+  font-weight: 400;
 }
