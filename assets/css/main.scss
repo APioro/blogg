@@ -82,7 +82,12 @@ $h-size-6: 1em;      // h6
   transition: none !important;
 }
 
-.sidebar sticky :hover{
+.sidebar :hover{
   opacity: 1 !important;
   transition: none !important;
+}
+
+.sidebar.sticky {
+  overflow-y: visible !important;
+  max-height: none !important;
 }
