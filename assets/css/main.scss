@@ -17,6 +17,7 @@ $header-font-family: "Switzer", sans-serif;
 /*COLORS */
 $link-color: #28745b;
 $blacktext: #000000;
+$darkgreytext: #161617;
 $text-color: $blacktext;
 $link-color: $blacktext;
 
@@ -91,6 +92,7 @@ $h-size-6: 1em;      // h6
 /* Navigation links only */
 .greedy-nav a,
 .masthead__menu a {
+  color: $darkgreytext;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -102,4 +104,59 @@ $h-size-6: 1em;      // h6
 .masthead__menu a:hover {
   opacity: 0.65;
   text-decoration: none;
+}
+
+/* Remove navigation hover/focus decorations and animations */
+.greedy-nav a,
+.greedy-nav a:hover,
+.greedy-nav a:focus,
+.greedy-nav a:focus-visible,
+.greedy-nav a:active,
+.greedy-nav button,
+.greedy-nav button:hover,
+.greedy-nav button:focus,
+.greedy-nav button:focus-visible,
+.greedy-nav button:active,
+.masthead__menu a,
+.masthead__menu a:hover,
+.masthead__menu a:focus,
+.masthead__menu a:focus-visible,
+.masthead__menu a:active,
+.masthead__menu button,
+.masthead__menu button:hover,
+.masthead__menu button:focus,
+.masthead__menu button:focus-visible,
+.masthead__menu button:active {
+  text-decoration: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Remove animated underline pseudo-elements */
+.greedy-nav a::before,
+.greedy-nav a::after,
+.masthead__menu a::before,
+.masthead__menu a::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Keep a gentle fade on navigation links */
+.greedy-nav a,
+.masthead__menu a {
+  transition: opacity 0.3s ease !important;
+}
+
+.greedy-nav a:hover,
+.masthead__menu a:hover {
+  opacity: 0.65;
+}
+
+/* Background */
+html,
+body,
+#main{
+  background-color: #f7f5f0;
 }
