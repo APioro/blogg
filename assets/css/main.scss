@@ -1,40 +1,22 @@
 
 ---
-# Only the main Sass file needs front matter
 search: false
 ---
 
 @charset "utf-8";
 
-/* 1. Color tokens */
-$color-ink: #0e1313;
-$color-near-black: #0b0606;
-$color-charcoal: #232227;
-$color-blue: #92a8b1;
-$color-slate: #4e5c63;
+/* 1. Theme settings — must come before imports */
 
-$color-background: #f7f7f4;
-$color-surface: #ffffff;
-$color-border: #d9e0e1;
-$color-accent-text: #3e5963;
-
-/* 2. Theme color settings */
-$background-color: $color-background;
-$text-color: $color-charcoal;
-$muted-text-color: $color-slate;
-$primary-color: $color-slate;
-$border-color: $color-border;
-$link-color: $color-accent-text;
-$footer-background-color: $color-ink;
-$masthead-background-color: $color-ink;
-$masthead-link-color: $color-background;
-$masthead-link-color-hover: $color-blue;
-$navicon-link-color-hover: $color-blue;
-
-/* 3. Typography */
+/* Typography */
 $sans-serif: "Switzer", sans-serif;
 $global-font-family: "Switzer", sans-serif;
 $header-font-family: "Switzer", sans-serif;
+
+/* Colors */
+$blacktext: #000000;
+$darkgreytext: #343832;
+$text-color: $blacktext;
+$link-color: $blacktext;
 
 /* General type scale */
 $type-size-1: 2.441em;
@@ -54,11 +36,11 @@ $h-size-4: 1.0625em;
 $h-size-5: 1.03125em;
 $h-size-6: 1em;
 
-/* 4. Import the theme once, after variable definitions */
+/* 2. Load the theme */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* 5. Load your local font */
+/* 3. Load local font */
 @font-face {
   font-family: "Switzer";
   src: url("../fonts/Switzer-Variable.woff2") format("woff2");
@@ -67,65 +49,81 @@ $h-size-6: 1em;
   font-display: swap;
 }
 
-/* 6. Page backgrounds */
+/* 4. Site background */
 html,
 body,
 #main,
-.initial-content {
-  background-color: $color-background;
+.masthead,
+.greedy-nav {
+  background-color: #fbfaf7 !important;
 }
 
-/* 7. Dark navigation */
+/* 5. Author avatar */
+.author__avatar img {
+  display: block;
+  width: 100%;
+  max-width: 258px;
+  height: auto;
+  object-fit: cover;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  background: transparent;
+}
+
+.author__avatar,
+.author__avatar a,
+.author__avatar a:hover,
+.author__avatar img:hover {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+  background: transparent;
+}
+
+/* 6. Sidebar hover behavior */
+.sidebar,
+.sidebar:hover,
+.sidebar :hover {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+/* 7. Navigation typography and interaction */
+
 .masthead,
-.masthead__inner-wrap,
 .greedy-nav {
-  background-color: $color-ink !important;
+  background-color: #bdd7eb !important;
 }
 
 .greedy-nav a,
 .masthead__menu a {
-  color: $color-background;
-  font-size: 14px;
+  color: #2b2c3b !important;
+  font-size: $type-size-6;
   font-weight: 400;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
   transition: opacity 0.3s ease !important;
 }
 
 .greedy-nav a:hover,
-.masthead__menu a:hover {
-  color: $color-background;
-  opacity: 0.65;
-  text-decoration: none;
-}
-
-/* Remove navigation hover/focus decorations and animations */
-.greedy-nav a,
-.greedy-nav a:hover,
-.greedy-nav a:focus,
-.greedy-nav a:focus-visible,
 .greedy-nav a:active,
-.greedy-nav button,
-.greedy-nav button:hover,
-.greedy-nav button:focus,
-.greedy-nav button:focus-visible,
-.greedy-nav button:active,
-.masthead__menu a,
 .masthead__menu a:hover,
-.masthead__menu a:focus,
-.masthead__menu a:focus-visible,
-.masthead__menu a:active,
-.masthead__menu button,
-.masthead__menu button:hover,
-.masthead__menu button:focus,
-.masthead__menu button:focus-visible,
-.masthead__menu button:active {
+.masthead__menu a:active {
+  opacity: 0.65;
   text-decoration: none !important;
   box-shadow: none !important;
   background-image: none !important;
-  animation: none !important;
 }
 
+/* Remove decorative underline animations */
 .greedy-nav a::before,
 .greedy-nav a::after,
 .masthead__menu a::before,
@@ -134,83 +132,12 @@ body,
   display: none !important;
 }
 
-.greedy-nav button {
-  color: $color-background;
-}
-
-.greedy-nav button:hover {
-  color: $color-blue;
-}
-
-/* 8. Links and accents */
-a {
-  text-decoration-color: $color-blue;
-  text-underline-offset: 0.2em;
-}
-
-a:hover {
-  text-decoration-color: $color-slate;
-}
-
-/* 9. Buttons */
-.btn {
-  background-color: $color-ink;
-  border-color: $color-ink;
-  color: $color-background;
-}
-
-.btn:hover {
-  background-color: $color-slate;
-  border-color: $color-slate;
-  color: $color-background;
-}
-
-/* 10. Footer */
-.page__footer {
-  background-color: $color-ink;
-  color: $color-background;
-}
-
-.page__footer a {
-  color: $color-blue;
-}
-
-.page__footer a:hover {
-  color: $color-background;
-}
-
-/* 11. Avatar — preserve existing styling */
-.author__avatar img {
-  display: block;
-  width: 100%;
-  max-width: 258px;
-  height: auto;
-  object-fit: cover;
-  border: none;
-  box-shadow: none;
-  border-radius: 0%;
-}
-
-.author__avatar a,
-.author__avatar a:hover {
-  opacity: 1 !important;
+/* Navigation buttons — no decorative hover effects */
+.greedy-nav button,
+.greedy-nav button:hover,
+.greedy-nav button:active {
   box-shadow: none !important;
-  filter: none !important;
-  transform: none !important;
-  transition: none !important;
-}
-
-.author__avatar img:hover,
-.u-photo :hover {
-  border: none !important;
-  box-shadow: none !important;
-  opacity: 1 !important;
-  filter: none !important;
-  transform: none !important;
-  transition: none !important;
-}
-
-.sidebar :hover {
-  opacity: 1 !important;
+  background-image: none !important;
+  animation: none !important;
   transition: none !important;
 }
