@@ -89,6 +89,13 @@ $h-size-6: 1em;      // h6
   transition: none !important;
 }
 
+.sidebar p{
+  opacity: 85;
+  font-weight: 300;
+}
+
+
+
 
 /* Navigation links only */
 .greedy-nav a,
@@ -148,20 +155,20 @@ $h-size-6: 1em;      // h6
 html,
 body,
 #main {
-  background-color: #fbfaf7;
+  background-color: #e1e6e9;
 }
 
 /* Navigation background */
 .masthead,
 .greedy-nav {
-  background-color: #100e0d !important;
+  background-color: #171818 !important;
 }
 
 /* Navigation text and buttons */
 .greedy-nav a,
 .masthead__menu a,
 .greedy-nav button {
-  color: #bdc0e3 !important;
+  color: #ebecf4 !important;
 }
 
 /* Gentle navigation link fade */
@@ -178,4 +185,8 @@ body,
 .sidebar.sticky {
   overflow-y: visible !important;
   max-height: none !important;
+}
+
+.p-summary{
+  opacity: 0.75;
 }

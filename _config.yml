@@ -58,7 +58,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "ABOUT"
+  # name   : "ABOUT"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : |
     My name is Angelika and I'm a Polish artist and designer. This is my blog where I post glimpses from my work, everyday life and reflections on life.
