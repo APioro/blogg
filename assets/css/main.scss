@@ -5,7 +5,7 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'neon' }}"; // skin
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 /* 1. Theme settings: define these BEFORE the imports */
@@ -87,7 +87,19 @@ $h-size-6: 1em;      // h6
   transition: none !important;
 }
 
-.sidebar.sticky {
-  overflow-y: visible !important;
-  max-height: none !important;
+
+/* Navigation links only */
+.greedy-nav a,
+.masthead__menu a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.greedy-nav a:hover,
+.masthead__menu a:hover {
+  opacity: 0.65;
+  text-decoration: none;
 }
