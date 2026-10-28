@@ -60,7 +60,9 @@ plugins:
 author:
   name   : "ABOUT"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My name is Angelika and I'm a Polish artist and designer. This is my blog where I post glimpses from my work, everyday life and reflections on life.\n I have went through some tough moments that changed the way I see my life and I hope this to be a space for other sensitive people to rest and come back to the present."
+  bio    : | 
+  My name is Angelika and I'm a Polish artist and designer. This is my blog where I post glimpses from my work, everyday life and reflections on life.
+  I have went through some tough moments that changed the way I see my life and I hope this to be a space for other sensitive people to rest and come back to the present.
   links:
     - label: "Bluesky"
       icon: "fa-brands fa-bluesky"

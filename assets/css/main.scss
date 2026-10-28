@@ -42,3 +42,14 @@ $link-color: $blacktext;
   border: none;
   box-shadow: none;
 }
+
+.u-profile,
+.u-profile:hover {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+  opacity: 1 !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+}
