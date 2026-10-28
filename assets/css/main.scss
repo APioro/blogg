@@ -1,20 +1,23 @@
-
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
 search: false
 ---
 
 @charset "utf-8";
 
-/* 1. Theme settings — must come before imports */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 
-/* Typography */
+/* 1. Theme settings: define these BEFORE the imports */
+/*TYPOGRAPHY*/
 $sans-serif: "Switzer", sans-serif;
 $global-font-family: "Switzer", sans-serif;
 $header-font-family: "Switzer", sans-serif;
 
-/* Colors */
+/*COLORS */
+$link-color: #28745b;
 $blacktext: #000000;
-$darkgreytext: #343832;
+$darkgreytext: #161617;
 $text-color: $blacktext;
 $link-color: $blacktext;
 
@@ -29,18 +32,19 @@ $type-size-7: 0.6875em;
 $type-size-8: 0.625em;
 
 /* Heading scale */
-$h-size-1: 1.563em;
-$h-size-2: 1.25em;
-$h-size-3: 1.125em;
-$h-size-4: 1.0625em;
-$h-size-5: 1.03125em;
-$h-size-6: 1em;
+$h-size-1: 1.563em;  // h1
+$h-size-2: 1.25em;   // h2
+$h-size-3: 1.125em;  // h3
+$h-size-4: 1.0625em; // h4
+$h-size-5: 1.03125em;// h5
+$h-size-6: 1em;      // h6
 
-/* 2. Load the theme */
+
+/* 2. Load the theme's original skin and styles */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* 3. Load local font */
+/* 3. Load your local font */
 @font-face {
   font-family: "Switzer";
   src: url("../fonts/Switzer-Variable.woff2") format("woff2");
@@ -49,81 +53,89 @@ $h-size-6: 1em;
   font-display: swap;
 }
 
-/* 4. Site background */
-html,
-body,
-#main,
-.masthead,
-.greedy-nav {
-  background-color: #fbfaf7 !important;
-}
-
-/* 5. Author avatar */
+/* 4. Your own CSS goes AFTER the theme imports */
 .author__avatar img {
   display: block;
   width: 100%;
   max-width: 258px;
   height: auto;
   object-fit: cover;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  border-radius: 0;
-  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0%;
 }
 
-.author__avatar,
 .author__avatar a,
-.author__avatar a:hover,
-.author__avatar img:hover {
+.author__avatar a:hover {
+  opacity: 1 !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.author__avatar img:hover,
+.u-photo :hover {
   border: none !important;
-  outline: none !important;
   box-shadow: none !important;
   opacity: 1 !important;
   filter: none !important;
   transform: none !important;
   transition: none !important;
-  background: transparent;
 }
 
-/* 6. Sidebar hover behavior */
-.sidebar,
-.sidebar:hover,
-.sidebar :hover {
+.sidebar :hover{
   opacity: 1 !important;
   transition: none !important;
 }
 
-/* 7. Navigation typography and interaction */
 
-.masthead,
-.greedy-nav {
-  background-color: #bdd7eb !important;
-}
-
+/* Navigation links only */
 .greedy-nav a,
 .masthead__menu a {
-  color: #2b2c3b !important;
-  font-size: $type-size-6;
+  color: $darkgreytext;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  text-decoration: none !important;
-  box-shadow: none !important;
-  background-image: none !important;
-  transition: opacity 0.3s ease !important;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
 .greedy-nav a:hover,
-.greedy-nav a:active,
-.masthead__menu a:hover,
-.masthead__menu a:active {
+.masthead__menu a:hover {
   opacity: 0.65;
+  text-decoration: none;
+}
+
+/* Remove navigation hover/focus decorations and animations */
+.greedy-nav a,
+.greedy-nav a:hover,
+.greedy-nav a:focus,
+.greedy-nav a:focus-visible,
+.greedy-nav a:active,
+.greedy-nav button,
+.greedy-nav button:hover,
+.greedy-nav button:focus,
+.greedy-nav button:focus-visible,
+.greedy-nav button:active,
+.masthead__menu a,
+.masthead__menu a:hover,
+.masthead__menu a:focus,
+.masthead__menu a:focus-visible,
+.masthead__menu a:active,
+.masthead__menu button,
+.masthead__menu button:hover,
+.masthead__menu button:focus,
+.masthead__menu button:focus-visible,
+.masthead__menu button:active {
   text-decoration: none !important;
   box-shadow: none !important;
   background-image: none !important;
+  animation: none !important;
+  transition: none !important;
 }
 
-/* Remove decorative underline animations */
+/* Remove animated underline pseudo-elements */
 .greedy-nav a::before,
 .greedy-nav a::after,
 .masthead__menu a::before,
@@ -132,12 +144,33 @@ body,
   display: none !important;
 }
 
-/* Navigation buttons — no decorative hover effects */
-.greedy-nav button,
-.greedy-nav button:hover,
-.greedy-nav button:active {
-  box-shadow: none !important;
-  background-image: none !important;
-  animation: none !important;
-  transition: none !important;
+/* Page background */
+html,
+body,
+#main {
+  background-color: #fbfaf7;
+}
+
+/* Navigation background */
+.masthead,
+.greedy-nav {
+  background-color: #bdd7eb !important;
+}
+
+/* Navigation text and buttons */
+.greedy-nav a,
+.masthead__menu a,
+.greedy-nav button {
+  color: #2b2c3b !important;
+}
+
+/* Gentle navigation link fade */
+.greedy-nav a,
+.masthead__menu a {
+  transition: opacity 0.3s ease !important;
+}
+
+.greedy-nav a:hover,
+.masthead__menu a:hover {
+  opacity: 0.65;
 }
