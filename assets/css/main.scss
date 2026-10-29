@@ -71,7 +71,8 @@ h4,
 h5,
 h6 {
   font-family: $header-font-family;
-  font-weight: 400;
+  font-weight: 300;
+  color: $whitetext;
 }
 
 /* 4. Your own CSS goes AFTER the theme imports */
@@ -219,4 +220,9 @@ body,
 
 a {
   color: $whitetext;
+}
+
+.archive__item-title {
+  font-family: inherit;
+  
 }
