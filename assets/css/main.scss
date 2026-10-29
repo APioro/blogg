@@ -19,6 +19,7 @@ $link-color: #a3cbe2;
 $whitetext: #eae5e0;
 $blacktext: #000000;
 $darkgreytext: #121212;
+$fadedtext: #ebe6dea8
 $text-color: $whitetext;
 
 
@@ -113,6 +114,8 @@ h6 {
 
 .sidebar p{
   font-weight: 300;
+  color: $fadedtext;
+  
 }
 
 
@@ -218,6 +221,7 @@ body,
   font-size: $type-size-5;
   font-weight: 300;
   line-height: 1.64;
+  color: $fadedtext;
 }
 
 a {
@@ -249,7 +253,7 @@ a {
 }
 
 .archive__item-excerpt {
-  opacity: 0.65;
+  color: $fadedtext;
 }
 .page__meta,
 .archive__item-date,
@@ -293,5 +297,5 @@ a {
 .page__content {
   font-weight: 300;
   line-height: 1.64;
-  color: #e0e0e09e;
+  color: $whitetext
 }
