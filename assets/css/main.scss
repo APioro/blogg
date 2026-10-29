@@ -232,6 +232,7 @@ a {
   font-family: $header-font-family;
   color: $whitetext;
   text-decoration: none;
+  line-height: 1.1;
 }
 
 /* Post titles: no blue color or underline */
@@ -299,4 +300,8 @@ a {
   line-height: 1.64;
   color: $whitetext;
   opacity:85%;
+}
+
+.entries-list .list-item {
+  padding-bottom: 72px;
 }
