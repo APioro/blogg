@@ -305,3 +305,21 @@ a {
 .entries-list .list__item {
   padding-bottom: 72px;
 }
+
+
+/*HERO*/
+body.layout--home .home-hero {
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+}
+
+body.layout--home .home-hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
