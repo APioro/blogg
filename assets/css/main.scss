@@ -266,3 +266,14 @@ a {
 .layout--posts #page-title {
   display: none;
 }
+
+@media (min-width: 64em) {
+  .sidebar {
+    padding-right: 1.5em;
+  }
+
+  .archive,
+  .page {
+    padding-left: 1.5em;
+  }
+}
