@@ -216,7 +216,8 @@ body,
 .page__content li,
 .page__content dl {
   font-size: $type-size-5;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 1.64;
 }
 
 a {
@@ -287,4 +288,10 @@ a {
 .masthead {
   border-bottom: none !important;
   box-shadow: none !important;
+}
+
+.page__content {
+  font-weight: 300;
+  line-height: 1.64;
+  color: #e0e0e09e;
 }
