@@ -223,6 +223,6 @@ a {
 }
 
 .archive__item-title {
-  font-family: inherit;
-  
+  font-family: $header-font-family;
+  color: $whitetext;
 }
