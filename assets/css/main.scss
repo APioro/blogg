@@ -16,7 +16,7 @@ $header-font-family: "Baskervville-VariableFont_wght", serif;
 
 /*COLORS */
 $link-color: #a3cbe2;
-$whitetext: #EAE8E6;
+$whitetext: #eae5e0;
 $blacktext: #000000;
 $darkgreytext: #121212;
 $text-color: $whitetext;
@@ -34,7 +34,7 @@ $type-size-8: 0.625em;
 
 /* Heading scale */
 $h-size-1: 3.29em;    // ~72px
-$h-size-2: 2.8em;     // ~57px
+$h-size-2: 2.9em;     // ~57px
 $h-size-3: 1.46em;    // ~32px
 $h-size-4: 1.1em;     // ~24px
 $h-size-5: 0.91em;    // ~20px
@@ -176,6 +176,7 @@ h6 {
 html,
 body,
 #main {
+  font-weight: 300;
   background-color: $darkgreytext;
 }
 
@@ -274,6 +275,16 @@ a {
 
   .archive,
   .page {
-    padding-left: 1.5em;
+    padding-left: 1.8em;
   }
+}
+
+.archive {
+        width: calc(100% - 300px);
+        padding-inline-end: 260px;
+    }
+
+.masthead {
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
