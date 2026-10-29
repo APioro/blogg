@@ -34,7 +34,7 @@ $type-size-8: 0.625em;
 
 /* Heading scale */
 $h-size-1: 3.29em;    // ~72px
-$h-size-2: 2.6em;     // ~57px
+$h-size-2: 2.8em;     // ~57px
 $h-size-3: 1.46em;    // ~32px
 $h-size-4: 1.1em;     // ~24px
 $h-size-5: 0.91em;    // ~20px
@@ -249,15 +249,18 @@ a {
 .archive__item-excerpt {
   opacity: 0.65;
 }
-
 .page__meta,
-.page__meta *,
 .archive__item-date,
 .archive__item-date *,
 .page__meta-readtime,
 .page__meta-readtime * {
   font-family: "Switzer", sans-serif !important;
   text-transform: uppercase;
+}
+
+.page__meta i,
+.page__meta-readtime i {
+  font-family: "Font Awesome 5 Free" !important;
 }
 
 .layout--posts #page-title {
