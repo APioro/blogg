@@ -12,7 +12,7 @@ search: false
 /*TYPOGRAPHY*/
 $sans-serif: "Switzer", sans-serif;
 $global-font-family: "Switzer", sans-serif;
-$header-font-family: "Switzer", sans-serif;
+$header-font-family: "Baskervville-VariableFont_wght", serif;
 
 /*COLORS */
 $link-color: #a3cbe2;
@@ -33,12 +33,12 @@ $type-size-7: 0.6875em;
 $type-size-8: 0.625em;
 
 /* Heading scale */
-$h-size-1: 1.563em;  // h1
-$h-size-2: 1.25em;   // h2
-$h-size-3: 1.125em;  // h3
-$h-size-4: 1.0625em; // h4
-$h-size-5: 1.03125em;// h5
-$h-size-6: 1em;      // h6
+$h-size-1: 2.618em;    // h1: 41.9px
+$h-size-2: 1.618em;    // h2: 25.9px
+$h-size-3: 1em;        // h3: 16px
+$h-size-4: 0.618em;    // h4: 9.9px
+$h-size-5: 0.618em;    // h5: 9.9px
+$h-size-6: 0.618em;    // h6: 9.9px
 
 
 /* 2. Load the theme's original skin and styles */
@@ -54,12 +54,23 @@ $h-size-6: 1em;      // h6
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Baskervville-VariableFont_wght";
+  src: url("../fonts/Baskervville-VariableFont_wght.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: $header-font-family;
   font-weight: 400;
 }
 
@@ -100,7 +111,6 @@ h6 {
 }
 
 .sidebar p{
-  opacity: 85;
   font-weight: 300;
 }
 
@@ -199,13 +209,14 @@ body,
   max-height: none !important;
 }
 
-.p-summary{
-  opacity: 0.75;
-}
 
 .page__content p,
 .page__content li,
 .page__content dl {
   font-size: $type-size-5;
   font-weight: 400;
+}
+
+a {
+  color: $whitetext;
 }

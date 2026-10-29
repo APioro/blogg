@@ -1,5 +1,5 @@
 ---
-title: "Post: Standard"
+title: "Giving myself a permission"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
