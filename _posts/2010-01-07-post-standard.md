@@ -1,6 +1,7 @@
 ---
 title: "Giving myself a permission"
 excerpt_separator: "<!--more-->"
+date: 2026-10-28
 categories:
   - Blog
 tags:
