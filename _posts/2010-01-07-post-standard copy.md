@@ -1,5 +1,5 @@
 ---
-title: "Freedom to."
+title: "On multipassionates"
 excerpt_separator: "<!--more-->"
 date: 2026-10-29
 categories:
@@ -11,9 +11,19 @@ tags:
 ---
 
 
-All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, "Oh, why can't you remain like this for ever!" This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.
+It caught my attention that there have surffaced on Youtube and Substack a great deal of content on being multipassionate. I found it relatabe. A curious interest in many vastly different fields from electronic to music, to pottery to writing.. Well, isnt that just great to be so interested_ You will never get bored and you can pick up virtually anything. Can even make anything your carreer. Itäs a superpower. 
 
-Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.
+ People usually dont talk a great deal about the good things, so caonsidering the volume of this sort of content it seems it hides some anxieties. What raises an eyebrow is that among ardent assurances of how fantastic this trait is you will find people pulling out a whiteboard and drawing charts. Solutions and schedules as to how to fit all of those interstes with so little time. Strange. As if its a problem to be solved. 
+
+
+There is a great deal of anxiety tied of not fulfilling all the potential, all the possible lives as a writes, a doctor, a programmer, an artise. I am interested in writing maybe equally much as I am interested in being a writer. Maybr a whole deal more. THe activity of writing becomes a chore that has to be fit into the schedule next to all the other activities. They all serve as a proof of their respective identity. Isn't there an aspect of fear there? Always on the lookout for something that could prove my worth or uniquness? Ironically, Barbara Sher coined the term The Scanner personality for something similar “intense curiosity about numerous unrelated subjects". Not a very gracious word to me. Although maybe a coincidence, the word scanner suggest a sort of anxiety - always on the lookout, surveying an area. For danger? For opportunity? A sort of rush rings in it for me. 
+
+
+And the desire for identity deserves an expoloration of its own. Notice what futures are usually listed: actress, musician, scientist, marine biologist doctor, housewife in the cottage. Those are all easy to idealise lifepaths with a fan base. And a multipassionate would like all of them. Collect them like pockemons. 
+
+They lament the "unlived possible lives", the unused potential. 
+
+Internet gives a fast access to broad information, but the deepth tahes more time to reach. It feeds the imaginaiton with people showcasing different lifestyles, different jobs. Steping away from jobs - it shows you disciplines I maybe would be completly oblivious to if I didnt see it online. Id have no way of knowing in my little village in Sweden of cybersecurity, but I might have googled that and become intesred. It's like a table of cakes and all look delicious, but you have only one stomach. 
 
 <!--more-->
 
